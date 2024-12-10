@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lutong Bahay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fbe9e7; /* Light pink background for the whole page */
+        }
+        header {
+            background-color: #ffccbc; /* Light peach */
+            color: #6a1b9a; /* Purple for header text */
+        }
+        footer {
+            background-color: #ffab91; /* Soft coral for footer */
+            color: #bf360c; /* Deep orange for footer text */
+        }
+        .category-card img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .navbar {
+            background-color: #ff7043; /* Light orange for navbar */
+        }
+        .navbar .nav-link {
+            color: #4e342e !important; /* Dark brown for navbar links */
+        }
+        .carousel-caption {
+            background-color: rgba(255, 204, 128, 0.8); /* Semi-transparent orange background */
+            color: #4e342e; /* Dark brown text for captions */
+            border-radius: 5px;
+        }
+        h1, h2, h3 {
+            color: #d32f2f; /* Deep red for headings */
+        }
+        h5.card-title {
+            color: #ff5722; /* Bright orange for category titles */
+        }
+        p {
+            color: #5d4037; /* Brown text for better readability */
+        }
+        .btn-warning {
+            background-color: #ff9800; /* Vibrant orange for buttons */
+            border: none;
+        }
+        .btn-warning:hover {
+            background-color: #f57c00; /* Slightly darker orange for hover */
+        }
+        section {
+            padding: 50px 0;
+            background-color: #ffe0b2; /* Light orange for all sections */
+            border-radius: 10px;
+        }
+        .img {
+            height: 100px;
+        }
+        .bg-light {
+            background-color: #fff3e0; /* Soft peach for background in some sections */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Taste Treasures</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recipe">Recipe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#submit">Submit Recipe</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section id="home">
+        <header class="text-center py-5">
+            <h1>Welcome to Taste Treasures</h1>
+            <p>Discover and share your favorite recipes with our community!</p>
+        </header>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="ikk.jpg" class="d-block w-100" alt="Kare-Kare">
+                    <div class="carousel-caption">
+                        <h5>Kare-Kare</h5>
+                        <p>A rich and savory Filipino dish with peanut sauce.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="halo-halo-FT-RECIPE0924-28931a658de3439d9719f83d5a6dfc2c.jpeg" class="d-block w-100" alt="Halo-Halo">
+                    <div class="carousel-caption">
+                        <h5>Halo-Halo</h5>
+                        <p>A refreshing Filipino dessert with shaved ice and sweet toppings.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="fdsae2692.png" class="d-block w-100" alt="Leche Flan">
+                    <div class="carousel-caption">
+                        <h5>Leche Flan</h5>
+                        <p>Leche Flan is a Filipino dessert made with egg yolks, milk, sugar, and vanilla extract.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <div class="container">
+            <h2 class="text-center">Recipe Categories</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card category-card">
+                        <img src="filipino-Banana-Cue-sweet-simple-vegan.jpg" class="card-img-top" alt="Snacks">
+                        <div class="card-body">
+                            <h5 class="card-title">Snacks</h5>
+                            <p class="card-text">Quick and tasty snacks for any time of the day.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card category-card">
+                        <img src="karekare.webp" class="card-img-top" alt="Dishes">
+                        <div class="card-body">
+                            <h5 class="card-title">Dishes</h5>
+                            <p class="card-text">Delicious meals for lunch or dinner to satisfy your appetite.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card category-card">
+                        <img src="BHG-Halo-Halo-Hero-6MKIKIe-ar386nzeJOHjW_-354671c880d441aba6a75e75e59b1066.jpg" class="card-img-top" alt="Desserts">
+                        <div class="card-body">
+                            <h5 class="card-title">Desserts</h5>
+                            <p class="card-text">Sweet treats to end your meal on a high note.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Section -->
+    <section id="recipe" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Kare-Kare Recipe</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/kare-kare.jpg" class="img-fluid" alt="Kare-Kare">
+                </div>
+                <div class="col-md-6">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>1 kg oxtail</li>
+                        <li>1 cup peanut butter</li>
+                        <li>1/2 cup shrimp paste</li>
+                        <li>Eggplant, string beans, banana blossom</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>Boil oxtail until tender.</li>
+                        <li>Add peanut butter and season with shrimp paste.</li>
+                        <li>Cook vegetables separately and add to the dish.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Halo-Halo Recipe Section -->
+    <section id="halo-halo-recipe" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Halo-Halo Recipe</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="halo-halo-FT-RECIPE0924-28931a658de3439d9719f83d5a6dfc2c.jpeg" class="img-fluid" alt="Halo-Halo">
+                </div>
+                <div class="col-md-6">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>Shaved ice</li>
+                        <li>Leche flan</li>
+                        <li>Sweetened beans (red beans, garbanzo beans)</li>
+                        <li>Fruit cocktail</li>
+                        <li>Ube ice cream</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>In a tall glass, layer the shaved ice, leche flan, sweetened beans, and fruit cocktail.</li>
+                        <li>Top with ube ice cream and a drizzle of evaporated milk.</li>
+                        <li>Mix all ingredients together and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leche Flan Recipe Section -->
+    <section id="leche-flan-recipe" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Leche Flan Recipe</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="fdsae2692.png" class="img-fluid" alt="Leche Flan">
+                </div>
+                <div class="col-md-6">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>10 egg yolks</li>
+                        <li>1 can evaporated milk</li>
+                        <li>1 can condensed milk</li>
+                        <li>1 tsp vanilla extract</li>
+                        <li>Caramelized sugar for the base</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>In a bowl, mix egg yolks, evaporated milk, condensed milk, and vanilla extract.</li>
+                        <li>Pour the mixture into a caramelized sugar-coated pan and steam for 45 minutes.</li>
+                        <li>Let it cool, refrigerate, and serve chilled.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit Recipe Section -->
+    <section id="submit" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Submit Your Recipe</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="recipeName" class="form-label">Recipe Name</label>
+                    <input type="text" class="form-control" id="recipeName" placeholder="Enter recipe name">
+                </div>
+                <div class="mb-3">
+                    <label for="ingredients" class="form-label">Ingredients</label>
+                    <textarea class="form-control" id="ingredients" rows="3" placeholder="List the ingredients"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="instructions" class="form-label">Instructions</label>
+                    <textarea class="form-control" id="instructions" rows="5" placeholder="List the instructions"></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Taste Treasures. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
